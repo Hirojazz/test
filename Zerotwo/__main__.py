@@ -57,15 +57,15 @@ PM_START_TEXT = """
 """
 
 HELP_STRINGS = """
- [Zero Two](https://telegra.ph/file/0b930645486429d762231.gif) 💗 comes with :-
+ [Test](https://telegra.ph/file/6ad22f1e67120e41278ee.mp4) 💗 comes with :-
 *AI Chatbot*, *Anime*, *Music*, *Notes*, *Filters* and *NSFW* functions!
 • __All commands can either be used with__ `/` __or__ `!`.
 """.format(
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-ZERO_IMG = "https://telegra.ph/file/0b930645486429d762231.gif
-ZEROIMGSTART = "https://telegra.ph/file/c2dcfa1a945502566db0f.gif"
+ZERO_IMG = "https://telegra.ph/file/6ad22f1e67120e41278ee.mp4"
+ZEROIMGSTART = "https://telegra.ph/file/6ad22f1e67120e41278ee.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer of the Base code, Paul
@@ -187,17 +187,17 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="✅Add Zero Two to your group",
+                            text="✅Add Test to your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
                      [
                          InlineKeyboardButton(
-                             text="📡Zero Two Support",
-                             url=f"https://t.me/zero2botsupport"),
+                             text="📡Test Support",
+                             url=f"https://t.me/waahbc001"),
                          InlineKeyboardButton(
-                             text="🚑Zero Two Updates",
-                             url="https://t.me/zero2updates"),              
+                             text="🚑Test Updates",
+                             url="https://t.me/waahbc00"),              
                     ],
                      [
                         InlineKeyboardButton(
@@ -207,12 +207,7 @@ def start(update: Update, context: CallbackContext):
                      [
                         InlineKeyboardButton(
                              text="🔩Logs Channel",
-                             url="https://t.me/zero2logs")                    
-                    ],                     
-                      [
-                        InlineKeyboardButton(
-                             text="💫Commands/Help",
-                             url="https://t.me/Zero_2_Robot?start=help")      
+                             url="https://t.me/waahbclog")                    
                     ]]))
     else:
         update.effective_message.reply_text(
